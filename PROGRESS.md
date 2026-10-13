@@ -25,3 +25,4 @@
 15. Added keyboard shortcuts (`Space`/`S` to spin, `T` to toggle timer, `R` to reset timer, `/` to focus task input, `Esc` to close modal, `?` for shortcuts cheat-sheet modal). PASS.
 16. Added in-place task text editing and rename support with inline edit state, Enter to save, and Escape to cancel. PASS.
 17. Added native HTML5 browser push notifications (`Notification.requestPermission`) on focus timer completion. PASS.
+18. Added audio theme selector (Casino Roulette 🎰, 8-Bit Arcade 👾, Soft Zen Chimes 🧘) using synthesized sound signatures. PASS.

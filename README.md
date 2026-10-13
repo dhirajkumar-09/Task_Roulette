@@ -54,7 +54,7 @@ Built with **Java 17** (plain `HttpServer` + SQLite) and **vanilla HTML, CSS and
 ### 🎨 Experience
 | Feature | Description |
 |---|---|
-| **Sound Effects & Volume Slider** | Wheel ticking, win fanfare and timer chime with Web Audio API. Includes interactive 0%–100% volume slider and mute toggle. |
+| **Sound Effects & Audio Themes** | Customizable audio themes (Casino Roulette 🎰, 8-Bit Arcade 👾, Soft Zen Chimes 🧘) using Web Audio API synthesis. Includes interactive 0%–100% volume slider and mute toggle. |
 | **Dark / Light Mode** | Theme toggle with auto-sync to OS system preference (`prefers-color-scheme`), remembered in browser. |
 | **Keyboard Shortcuts** | Full keyboard control (`Space`/`S` to spin, `T` to toggle timer, `R` to reset, `/` to focus input, `Esc` to close modals, `?` for help). |
 | **Responsive Design** | Works from large monitors down to 375px phone screens. |
