@@ -21,3 +21,4 @@
    - Connected volume slider to Web Audio API Master GainNode (`masterGainNode.gain.value`).
    - Persisted user volume preference across sessions in `localStorage` (`tr_sound_volume`). PASS.
 13. Added duplicate task validation (HTTP 409 Conflict for incomplete duplicate tasks and friendly UI toast warning). PASS.
+14. Added dark/light theme auto-sync with system preference (`prefers-color-scheme`) and dynamic change listener. PASS.
