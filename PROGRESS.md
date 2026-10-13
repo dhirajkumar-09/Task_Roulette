@@ -30,3 +30,4 @@
 20. Added sliding-window in-memory IP rate limiting (60 req/min for mutations, 120 req/min for queries) and HTML input sanitization (150 char max). PASS.
 21. Added Daily & Weekly Productivity Stats Modal and 60-Day Activity Heatmap with GET /api/stats endpoint, focus hour tracking, and modal analytics. PASS.
 22. Added docker-compose configuration (`docker-compose.yml`) with persistent SQLite volume mounting on `./data:/app/data`. PASS.
+23. Added comprehensive documentation improvements in README.md, `docs/preview.svg`, and MIT LICENSE file. PASS.
