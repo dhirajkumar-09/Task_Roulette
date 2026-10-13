@@ -58,6 +58,7 @@ Built with **Java 17** (plain `HttpServer` + SQLite) and **vanilla HTML, CSS and
 | **Dark / Light Mode** | Theme toggle with auto-sync to OS system preference (`prefers-color-scheme`), remembered in browser. |
 | **Keyboard Shortcuts** | Full keyboard control (`Space`/`S` to spin, `T` to toggle timer, `R` to reset, `/` to focus input, `Esc` to close modals, `?` for help). |
 | **Responsive Design** | Works from large monitors down to 375px phone screens. |
+| **Rate Limiting & Security** | In-memory sliding-window rate limiter (HTTP 429), strict 150-char validation, and HTML sanitization defending against XSS and spam. |
 | **Docker Ready** | Multi-stage Dockerfile and automatic `PORT` binding for cloud deployment. |
 
 ---

@@ -27,3 +27,4 @@
 17. Added native HTML5 browser push notifications (`Notification.requestPermission`) on focus timer completion. PASS.
 18. Added audio theme selector (Casino Roulette 🎰, 8-Bit Arcade 👾, Soft Zen Chimes 🧘) using synthesized sound signatures. PASS.
 19. Added Pomodoro break interval cycles (25m Focus, 5m Short Break, 15m Long Break after 4 cycles) with cycle indicators and auto-transitions. PASS.
+20. Added sliding-window in-memory IP rate limiting (60 req/min for mutations, 120 req/min for queries) and HTML input sanitization (150 char max). PASS.
