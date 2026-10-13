@@ -20,3 +20,4 @@
    - Added interactive range slider (0% to 100%, step 0.05) in header with luxury pill container.
    - Connected volume slider to Web Audio API Master GainNode (`masterGainNode.gain.value`).
    - Persisted user volume preference across sessions in `localStorage` (`tr_sound_volume`). PASS.
+13. Added duplicate task validation (HTTP 409 Conflict for incomplete duplicate tasks and friendly UI toast warning). PASS.
