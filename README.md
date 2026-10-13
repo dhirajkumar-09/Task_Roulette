@@ -119,6 +119,12 @@ Then open **http://localhost:8080/**
 
 ### Option B: Run with Docker
 
+Run with Docker Compose (includes persistent database volume):
+```bash
+docker compose up --build
+```
+
+Or run standalone:
 ```bash
 docker build -t task-roulette .
 docker run -p 8080:8080 task-roulette
@@ -126,7 +132,7 @@ docker run -p 8080:8080 task-roulette
 
 Then open **http://localhost:8080/**
 
-> The server reads the port from the `PORT` environment variable (default `8080`) and binds to `0.0.0.0`.
+> The server reads the port from the `PORT` environment variable (default `8080`) and binds to `0.0.0.0`. Persistent database storage is mounted at `/app/data`.
 
 ---
 
