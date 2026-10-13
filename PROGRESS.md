@@ -26,3 +26,4 @@
 16. Added in-place task text editing and rename support with inline edit state, Enter to save, and Escape to cancel. PASS.
 17. Added native HTML5 browser push notifications (`Notification.requestPermission`) on focus timer completion. PASS.
 18. Added audio theme selector (Casino Roulette 🎰, 8-Bit Arcade 👾, Soft Zen Chimes 🧘) using synthesized sound signatures. PASS.
+19. Added Pomodoro break interval cycles (25m Focus, 5m Short Break, 15m Long Break after 4 cycles) with cycle indicators and auto-transitions. PASS.
