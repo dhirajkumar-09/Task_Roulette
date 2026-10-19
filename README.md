@@ -267,18 +267,28 @@ Planned features are tracked in the [Issues](https://github.com/dhirajkumar-09/T
 
 - [x] Task priority and tags (High, Medium, Low)
 - [x] Weighted roulette wheel based on priority
-- [ ] Prevent duplicate task names
-- [ ] Edit task text directly in the list
-- [ ] Pomodoro cycle with short and long breaks
-- [ ] Browser notification when the focus timer ends
-- [ ] Keyboard shortcuts
-- [ ] Sound themes and a volume slider
-- [ ] Auto-sync theme with the system dark/light preference
+- [x] Prevent duplicate task names
+- [x] Edit task text directly in the list
+- [x] Pomodoro cycle with short and long breaks
+- [x] Browser notification when the focus timer ends
+- [x] Keyboard shortcuts
+- [x] Sound themes and a volume slider
+- [x] Auto-sync theme with the system dark/light preference
 - [x] Export and import tasks (JSON / CSV)
-- [ ] Productivity stats and heatmap calendar
-- [ ] Rate limiting and input sanitization
-- [ ] `docker-compose.yml` for one-command setup
-- [ ] GitHub Actions CI (build and API smoke tests)
+- [x] Productivity stats and heatmap calendar
+- [x] Rate limiting and input sanitization
+- [x] `docker-compose.yml` for one-command setup
+- [x] GitHub Actions CI (build and API smoke tests)
+- [ ] Task search & filter by keyword or priority tag ([#36](https://github.com/dhirajkumar-09/Task_Roulette/issues/36))
+- [ ] Task due dates & overdue badges ([#37](https://github.com/dhirajkumar-09/Task_Roulette/issues/37))
+- [ ] Custom wheel color palettes & theme customizer ([#38](https://github.com/dhirajkumar-09/Task_Roulette/issues/38))
+- [ ] Ambient background sounds for focus timer ([#39](https://github.com/dhirajkumar-09/Task_Roulette/issues/39))
+- [ ] Task notes & expandable subtasks / checklist ([#40](https://github.com/dhirajkumar-09/Task_Roulette/issues/40))
+- [ ] Customizable celebration particles & confetti styles ([#41](https://github.com/dhirajkumar-09/Task_Roulette/issues/41))
+- [ ] Drag-and-drop task reordering for custom priority ([#42](https://github.com/dhirajkumar-09/Task_Roulette/issues/42))
+- [ ] Daily goal tracker & target progress bar ([#43](https://github.com/dhirajkumar-09/Task_Roulette/issues/43))
+- [ ] Offline support & Progressive Web App (PWA) manifest ([#44](https://github.com/dhirajkumar-09/Task_Roulette/issues/44))
+- [ ] Fullscreen Zen focus mode for timer ([#45](https://github.com/dhirajkumar-09/Task_Roulette/issues/45))
 
 ---
 

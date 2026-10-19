@@ -166,3 +166,115 @@ You can copy and paste these directly into [GitHub Issues](https://github.com/dh
   - [x] Add complete API table with all endpoints and examples.
   - [x] Add project structure layout and contributing guide.
   - [x] Add MIT license and status badges.
+
+---
+
+### Issue 17: [Feature] Task Search & Filter by Keyword or Priority Tag (#36)
+- **Label**: `enhancement`, `ui/ux`, `good first issue`
+- **Description**: Add real-time search input bar above the task list to let users filter tasks instantly by keywords or priority tags (#tag, high/med/low).
+- **Tasks**:
+  - [ ] Add a search input with a search icon above the task list.
+  - [ ] Filter task cards in real-time on the `input` event.
+  - [ ] Support priority filtering (e.g., typing `HIGH`, `MED`, or `LOW`).
+  - [ ] Add a clear button inside or next to the search input.
+  - [ ] Show a friendly empty state when no tasks match the filter.
+
+---
+
+### Issue 18: [Feature] Task Due Dates & Overdue Badges (#37)
+- **Label**: `enhancement`, `database`, `good first issue`
+- **Description**: Allow users to optionally set a due date for tasks when creating or editing them. Display color-coded badges indicating if a task is due today, in the future, or overdue.
+- **Tasks**:
+  - [ ] Add a `due_date` column to SQLite `tasks` table (`ALTER TABLE tasks ADD COLUMN due_date TEXT DEFAULT NULL`).
+  - [ ] Update `POST /api/tasks` and `PUT /api/tasks/{id}` to accept and return `dueDate`.
+  - [ ] Add optional HTML date picker in the task creation form.
+  - [ ] Render due date pill badge on task items with relative indicator (e.g. "Overdue", "Today", "Oct 25").
+
+---
+
+### Issue 19: [Feature] Custom Wheel Color Palettes & Theme Customizer (#38)
+- **Label**: `enhancement`, `ui/ux`, `good first issue`
+- **Description**: Give users the ability to customize the visual appearance of the roulette wheel by choosing from multiple curated color palettes instead of only the default palette.
+- **Tasks**:
+  - [ ] Define palette objects with hex color arrays in JavaScript.
+  - [ ] Add a "Wheel Color Theme" dropdown selector in the profile/settings modal.
+  - [ ] Persist the user's selected palette in `localStorage` (`tr_wheel_palette`).
+  - [ ] Dynamically redraw the canvas roulette wheel whenever the palette changes.
+
+---
+
+### Issue 20: [Feature] Ambient Background Sounds for Focus Timer (White Noise / Rain / Zen) (#39)
+- **Label**: `enhancement`, `audio`, `good first issue`
+- **Description**: Add optional relaxing ambient background soundscapes generated directly via the Web Audio API during focus sessions to improve concentration.
+- **Tasks**:
+  - [ ] Synthesize continuous noise buffers using Web Audio API AudioBufferSourceNode.
+  - [ ] Add an ambient sound toggle & selector in the Focus Timer card.
+  - [ ] Start audio automatically when focus timer starts; fade out when paused/stopped.
+  - [ ] Tie ambient audio volume to the header master volume slider.
+
+---
+
+### Issue 21: [Feature] Task Notes & Expandable Subtasks / Checklist (#40)
+- **Label**: `enhancement`, `ui/ux`, `good first issue`
+- **Description**: Allow users to attach short notes or mini-checklist items to any task, making it easier to break complex goals into small steps before spinning the wheel.
+- **Tasks**:
+  - [ ] Add `notes` TEXT column to SQLite `tasks` table (`ALTER TABLE tasks ADD COLUMN notes TEXT DEFAULT ''`).
+  - [ ] Update backend API (`POST`, `PUT`, `GET`) to include the notes field.
+  - [ ] Add an expand/collapse arrow (▾/▴) on task cards to reveal notes.
+  - [ ] Allow editing notes in-place.
+
+---
+
+### Issue 22: [Feature] Customizable Celebration Particles & Confetti Styles (#41)
+- **Label**: `enhancement`, `ui/ux`, `good first issue`
+- **Description**: Make the victory celebration even more satisfying when winning a wheel spin or finishing a focus session by adding multiple confetti particle modes.
+- **Tasks**:
+  - [ ] Expand the canvas particle engine to draw shapes (stars, circles, emoji glyphs).
+  - [ ] Add celebration style setting in the settings modal.
+  - [ ] Save preference in `localStorage` (`tr_celebration_style`).
+  - [ ] Trigger mini particle burst when checking off a task as done.
+
+---
+
+### Issue 23: [Feature] Drag-and-Drop Task Reordering for Custom Priority (#42)
+- **Label**: `enhancement`, `ui/ux`, `good first issue`
+- **Description**: Allow users to manually reorder tasks in their task list by dragging and dropping them into their preferred sequence.
+- **Tasks**:
+  - [ ] Add an optional `position` integer column in SQLite `tasks` table.
+  - [ ] Implement HTML5 Drag and Drop API events (`dragstart`, `dragover`, `drop`, `dragend`).
+  - [ ] Add a drag handle icon (`⋮⋮`) to each task card.
+  - [ ] Update task positions on drop and send order update to backend (`PUT /api/tasks/reorder`).
+
+---
+
+### Issue 24: [Feature] Daily Goal Tracker & Target Progress Bar (#43)
+- **Label**: `enhancement`, `analytics`, `good first issue`
+- **Description**: Add a daily goal completion tracker (e.g. "Goal: 5 tasks today") to encourage daily habit building and gamify productivity alongside streaks.
+- **Tasks**:
+  - [ ] Add daily goal setting input in the user profile modal.
+  - [ ] Calculate progress towards today's goal from completed tasks count.
+  - [ ] Render a progress bar or circular progress indicator in the daily streak bar.
+  - [ ] Show congratulations toast and sound when hitting 100% of the daily goal.
+
+---
+
+### Issue 25: [Feature] Offline Support & Progressive Web App (PWA) Manifest (#44)
+- **Label**: `enhancement`, `infrastructure`, `good first issue`
+- **Description**: Convert Task Roulette into an installable Progressive Web App (PWA) so users can install it on their phones, tablets, or desktop systems and access the app offline.
+- **Tasks**:
+  - [ ] Create `static/manifest.json` with app metadata and standard icon sizes (192x192, 512x512).
+  - [ ] Create a lightweight `static/sw.js` service worker caching essential app assets.
+  - [ ] Register the service worker in `static/index.html`.
+  - [ ] Handle `beforeinstallprompt` to show an install button for eligible browsers.
+
+---
+
+### Issue 26: [Feature] Fullscreen Zen Focus Mode for Timer (#45)
+- **Label**: `enhancement`, `accessibility`, `good first issue`
+- **Description**: Provide a distraction-free Fullscreen Zen Mode for the Focus Timer that hides all surrounding UI (task list, wheel, header) and displays only the active task and a countdown dial.
+- **Tasks**:
+  - [ ] Add Zen Mode button (⛶) in the Focus Timer card header.
+  - [ ] Add full-screen CSS styles (`.zen-active`) with smooth transition and backdrop blur.
+  - [ ] Bind keyboard shortcut (`F`) to toggle Zen Mode.
+  - [ ] Ensure timer controls (Start / Pause / Reset) remain accessible in Zen Mode.
+
